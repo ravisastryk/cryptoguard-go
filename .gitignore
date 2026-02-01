@@ -1,0 +1,17 @@
+# Binary (anchored so cmd/cryptoguard/ is NOT ignored)
+/cryptoguard
+*.exe
+*.test
+*.out
+*.sarif
+results/
+vendor/
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+dist/
+build/
+coverage.txt
+coverage.html
