@@ -15,3 +15,8 @@ dist/
 build/
 coverage.txt
 coverage.html
+
+# GitHub Actions scan outputs (generated files)
+# Note: reports/ is NOT ignored so scan results are visible in repo
+scan-results/
+temp-scan-*/
