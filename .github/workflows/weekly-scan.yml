@@ -1,0 +1,66 @@
+name: Weekly Cryptographic Vulnerability Scan
+
+on:
+  schedule:
+    # Run every Monday at 9:00 AM UTC
+    - cron: '0 9 * * 1'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write  # To commit and push scan reports
+
+jobs:
+  scan-repositories:
+    name: Scan Go Repositories for Crypto Vulnerabilities
+    runs-on: ubuntu-latest
+    timeout-minutes: 60  # 1 hour max for scanning 10 repos
+
+    steps:
+      - name: Checkout CryptoGuard-Go
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Build CryptoGuard-Go
+        run: |
+          go build -o cryptoguard ./cmd/cryptoguard
+          chmod +x cryptoguard
+
+      - name: Verify tool works
+        run: |
+          ./cryptoguard -version
+
+      - name: Scan test repositories
+        run: |
+          chmod +x .github/scripts/scan-repos.sh
+          .github/scripts/scan-repos.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate summary report
+        run: |
+          chmod +x .github/scripts/generate-report.sh
+          .github/scripts/generate-report.sh
+
+      - name: Upload scan results
+        uses: actions/upload-artifact@v4
+        with:
+          name: cryptoguard-scan-results
+          path: |
+            scan-results/
+            reports/
+          retention-days: 730  # 2 years retention
+
+      - name: Commit and push reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update weekly scan reports - $(date +%Y-%m-%d)"
+          git push || true  # Don't fail if nothing to push

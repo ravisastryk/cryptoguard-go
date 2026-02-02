@@ -1,6 +1,6 @@
 module github.com/ravisastryk/cryptoguard-go
 
-go 1.25.4
+go 1.25
 
 require golang.org/x/tools v0.41.0
 

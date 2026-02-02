@@ -1,0 +1,13 @@
+# CryptoGuard-Go Scan Configuration
+
+# Repositories to exclude from scanning
+excluded_repos:
+  - golang/go  # Go standard library - reference implementation, not for scanning
+  # Add more repositories to exclude here
+  # - owner/repo
+
+# Scan criteria
+scan_settings:
+  max_repos: 10
+  min_stars: 100
+  min_forks: 50

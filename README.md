@@ -62,6 +62,42 @@ HIGH: MD5 used for security purposes
   Fix: Use SHA-256 or bcrypt/argon2 for password hashing
 ```
 
+## Ecosystem Scan Results
+
+![Scan Status](https://img.shields.io/badge/Weekly_Scan-Active-green)
+![Last Scan](https://img.shields.io/badge/Last_Scan-2026--02--01-blue)
+![Repositories](https://img.shields.io/badge/Repositories_Scanned-10-blue)
+![Issues Found](https://img.shields.io/badge/Issues_Found-51-orange)
+
+**Automated weekly scans of top Go repositories** (updated every Monday)
+
+*Note: Some repositories are excluded from scanning (e.g., golang/go as it's the reference implementation). See [.github/scan-config.yml](.github/scan-config.yml) for the exclusion list.*
+
+### Top Findings
+
+| Repository | Issues | Critical | High | Medium | Status |
+|------------|--------|----------|------|--------|--------|
+| [kubernetes/kubernetes](reports/detailed-remediation.md#kubernetes-kubernetes) | 42 | 0 | 0 | 42 | Medium Risk |
+| [fatedier/frp](reports/detailed-remediation.md#fatedier-frp) | 8 | 0 | 3 | 5 | High Risk |
+| [ollama/ollama](reports/detailed-remediation.md#ollama-ollama) | 1 | 0 | 1 | 0 | High Risk |
+| moby/moby | 0 | 0 | 0 | 0 | Clean |
+| prometheus/prometheus | 0 | 0 | 0 | 0 | Clean |
+
+### 🔴 Vulnerability Impact Analysis
+
+**Top Go ecosystem cryptographic vulnerabilities** — Real-time scan (updated weekly)
+
+| CWE | Vulnerability | Instances | Severity |
+|-----|--------------|-----------|----------|
+| ![CWE-327](https://img.shields.io/badge/CWE--327-47-orange?style=flat-square) | Quantum-vulnerable (RSA/ECDSA) | **47** | 🟡 MEDIUM |
+| ![CWE-328](https://img.shields.io/badge/CWE--328-4-red?style=flat-square) | MD5 usage for security | **4** | 🟠 HIGH |
+
+**Total Impact:** ![Total Issues](https://img.shields.io/badge/total_issues-51-red?style=for-the-badge) ![Repos Affected](https://img.shields.io/badge/repos_affected-3/10-blue?style=for-the-badge)
+
+**See full reports:**
+- [Summary Report](reports/summary.md) - Executive overview
+- [Detailed Remediation Guide](reports/detailed-remediation.md) - Code-level fixes
+
 ## Rules
 
 | ID | Category | Severity | Description |
@@ -77,7 +113,8 @@ HIGH: MD5 used for security purposes
 | CRYPTO040 | post-quantum | MEDIUM | Quantum-vulnerable algorithm |
 | CRYPTO050 | iv-misuse | CRITICAL | Cross-function IV reuse |
 
-## GitHub Action
+<details>
+<summary><b>GitHub Action</b> (click to expand)</summary>
 
 ```yaml
 name: Security Scan
@@ -107,19 +144,7 @@ jobs:
           sarif_file: results.sarif
 ```
 
-## Academic Background
-
-This tool builds upon and extends:
-
-1. **CryptoGo** (ACSAC 2022) -- Automatic detection of Go cryptographic API misuses
-2. **CryptoLint** (CCS 2012) -- First large-scale crypto misuse study
-3. **NIST Post-Quantum Standards** (2024) -- FIPS 203, 204, 205
-
-### Novel Contributions
-
-- Post-quantum readiness analysis: first tool to identify quantum-vulnerable crypto in Go.
-- Cross-function taint analysis: tracks IV/key material across function boundaries.
-- Context-aware detection: reduces false positives by understanding security context.
+</details>
 
 ## Contributing
 
