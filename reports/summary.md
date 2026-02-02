@@ -1,6 +1,6 @@
 # CryptoGuard-Go Weekly Vulnerability Scan Report
 
-**Scan Date:** 2026-02-01 18:43:31 UTC
+**Scan Date:** 2026-02-01 19:05:33 UTC
 **Tool Version:** v0.1.0
 
 ## Executive Summary
@@ -17,10 +17,10 @@ Total issues found: 51
 
 | Repository | Total Issues | Critical | High | Medium | Low | Status |
 |------------|--------------|----------|------|--------|-----|--------|
-| avelino\/awesome\/go | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
-| fatedier\/frp | 8 | 0 | 3 | 5 | 0 | ✗ High |
-| kubernetes\/kubernetes | 42 | 0 | 0 | 42 | 0 | ✗ Issues Found |
-| ollama\/ollama | 1 | 0 | 1 | 0 | 0 | ✗ High |
+| [avelino/awesome-go](https://github.com/avelino/awesome-go) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
+| [fatedier/frp](https://github.com/fatedier/frp) | 8 | 0 | 3 | 5 | 0 | ✗ High |
+| [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | 42 | 0 | 0 | 42 | 0 | ✗ Issues Found |
+| [ollama/ollama](https://github.com/ollama/ollama) | 1 | 0 | 1 | 0 | 0 | ✗ High |
 
 ## Issue Breakdown
 

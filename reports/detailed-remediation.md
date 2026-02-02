@@ -23,7 +23,7 @@ This report provides detailed, actionable remediation steps for each identified 
 
 <a name="fatedier-frp"></a>
 
-### Repository: fatedier\/frp
+### Repository: [fatedier/frp](https://github.com/fatedier/frp)
 
 **Total Issues:** 8
 **Breakdown:** 0 Critical, 3 High, 5 Medium, 0 Low
@@ -42,7 +42,7 @@ This report provides detailed, actionable remediation steps for each identified 
 
 <a name="kubernetes-kubernetes"></a>
 
-### Repository: kubernetes\/kubernetes
+### Repository: [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes)
 
 **Total Issues:** 42
 **Breakdown:** 0 Critical, 0 High, 42 Medium, 0 Low
@@ -59,7 +59,7 @@ This report provides detailed, actionable remediation steps for each identified 
 
 <a name="ollama-ollama"></a>
 
-### Repository: ollama\/ollama
+### Repository: [ollama/ollama](https://github.com/ollama/ollama)
 
 **Total Issues:** 1
 **Breakdown:** 0 Critical, 1 High, 0 Medium, 0 Low

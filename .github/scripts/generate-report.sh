@@ -47,7 +47,7 @@ for json_file in scan-results/*.json; do
     if [ -f "$json_file" ]; then
         # Extract repository name from filename
         filename=$(basename "$json_file" .json)
-        repo_name="${filename//-/\/}"
+        repo_name=$(echo "$filename" | sed 's/-/\//')
 
         # Count issues by severity using jq if available, otherwise use grep
         if command -v jq &> /dev/null; then
@@ -77,8 +77,8 @@ for json_file in scan-results/*.json; do
             status="✓ Clean"
         fi
 
-        # Add row to table
-        echo "| $repo_name | $total | $critical | $high | $medium | $low | $status |" >> "$REPORT_FILE"
+        # Add row to table (with clickable GitHub link)
+        echo "| [$repo_name](https://github.com/$repo_name) | $total | $critical | $high | $medium | $low | $status |" >> "$REPORT_FILE"
     fi
 done
 
@@ -191,17 +191,18 @@ echo "" >> "$REMEDIATION_FILE"
 for txt_file in scan-results/*.txt; do
     if [ -f "$txt_file" ]; then
         filename=$(basename "$txt_file" .txt)
-        repo_name="${filename//-/\/}"
+        repo_name=$(echo "$filename" | sed 's/-/\/'/)
         repo_anchor=$(echo "$filename" | tr '[:upper:]' '[:lower:]')
 
         # Count issues by severity
-        total=$(grep -c "Rule:" "$txt_file" 2>/dev/null || echo "0")
+        total=$(grep -c "Rule:" "$txt_file" 2>/dev/null | head -1)
+        total=${total:-0}
 
         if [ "$total" -gt 0 ]; then
             # Add anchor for linking from README
             echo "<a name=\"$repo_anchor\"></a>" >> "$REMEDIATION_FILE"
             echo "" >> "$REMEDIATION_FILE"
-            echo "### Repository: $repo_name" >> "$REMEDIATION_FILE"
+            echo "### Repository: [$repo_name](https://github.com/$repo_name)" >> "$REMEDIATION_FILE"
             echo "" >> "$REMEDIATION_FILE"
             echo "**Total Issues:** $total" >> "$REMEDIATION_FILE"
 
