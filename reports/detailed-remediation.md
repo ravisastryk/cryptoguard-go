@@ -1,6 +1,6 @@
 # CryptoGuard-Go Detailed Remediation Guide
 
-**Generated:** 2026-02-09
+**Generated:** 2026-02-16
 
 This report provides detailed, actionable remediation steps for each identified vulnerability with code-level examples.
 
@@ -81,8 +81,8 @@ This report provides detailed, actionable remediation steps for each identified 
 
 ### Repository: [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes)
 
-**Total Issues:** 42
-**Breakdown:** 0 Critical, 0 High, 42 Medium, 0 Low
+**Total Issues:** 43
+**Breakdown:** 0 Critical, 0 High, 43 Medium, 0 Low
 
 #### Code Locations:
 
