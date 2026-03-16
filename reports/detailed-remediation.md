@@ -1,6 +1,6 @@
 # CryptoGuard-Go Detailed Remediation Guide
 
-**Generated:** 2026-03-09
+**Generated:** 2026-03-16
 
 This report provides detailed, actionable remediation steps for each identified vulnerability with code-level examples.
 
@@ -25,8 +25,8 @@ This report provides detailed, actionable remediation steps for each identified 
 
 ### Repository: [fatedier/frp](https://github.com/fatedier/frp)
 
-**Total Issues:** 8
-**Breakdown:** 0 Critical, 3 High, 5 Medium, 0 Low
+**Total Issues:** 9
+**Breakdown:** 0 Critical, 3 High, 6 Medium, 0 Low
 
 #### Code Locations:
 
