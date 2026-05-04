@@ -1,6 +1,6 @@
 # CryptoGuard-Go Detailed Remediation Guide
 
-**Generated:** 2026-04-27
+**Generated:** 2026-05-04
 
 This report provides detailed, actionable remediation steps for each identified vulnerability with code-level examples.
 
@@ -65,24 +65,6 @@ This report provides detailed, actionable remediation steps for each identified 
 
 **Total Issues:** 2
 **Breakdown:** 0 Critical, 2 High, 0 Medium, 0 Low
-
-#### Code Locations:
-
-| Severity | Rule | File:Line | Description |
-|----------|------|-----------|-------------|
-
-**Recommended Actions:**
-1. Address HIGH/CRITICAL issues immediately
-2. Replace MD5 with SHA-256: `find . -name "*.go" -exec sed -i 's/crypto\/md5/crypto\/sha256/g' {} \;`
-
----
-
-<a name="ollama-ollama"></a>
-
-### Repository: [ollama/ollama](https://github.com/ollama/ollama)
-
-**Total Issues:** 1
-**Breakdown:** 0 Critical, 1 High, 0 Medium, 0 Low
 
 #### Code Locations:
 

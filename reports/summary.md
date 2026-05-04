@@ -1,6 +1,6 @@
 # CryptoGuard-Go Weekly Vulnerability Scan Report
 
-**Scan Date:** 2026-04-27 09:55:44 UTC
+**Scan Date:** 2026-05-04 09:54:23 UTC
 **Tool Version:** v0.1.0
 
 ## Executive Summary
@@ -8,7 +8,7 @@
 
 Total repositories scanned: 10
 Repositories with issues: 6
-Total issues found: 18
+Total issues found: 17
 
 
 ## Detailed Findings
@@ -24,7 +24,7 @@ Total issues found: 18
 | [jesseduffield/lazygit](https://github.com/jesseduffield/lazygit) | 2 | 0 | 2 | 0 | 0 | ✗ High |
 | [junegunn/fzf](https://github.com/junegunn/fzf) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
-| [ollama/ollama](https://github.com/ollama/ollama) | 1 | 0 | 1 | 0 | 0 | ✗ High |
+| [ollama/ollama](https://github.com/ollama/ollama) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [syncthing/syncthing](https://github.com/syncthing/syncthing) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 
 ## Issue Breakdown
