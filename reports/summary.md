@@ -1,6 +1,6 @@
 # CryptoGuard-Go Weekly Vulnerability Scan Report
 
-**Scan Date:** 2026-05-18 10:37:14 UTC
+**Scan Date:** 2026-05-25 10:40:24 UTC
 **Tool Version:** v0.1.0
 
 ## Executive Summary
