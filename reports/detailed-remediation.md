@@ -1,6 +1,6 @@
 # CryptoGuard-Go Detailed Remediation Guide
 
-**Generated:** 2026-06-22
+**Generated:** 2026-06-29
 
 This report provides detailed, actionable remediation steps for each identified vulnerability with code-level examples.
 
@@ -37,24 +37,6 @@ This report provides detailed, actionable remediation steps for each identified 
 1. Address HIGH/CRITICAL issues immediately
 2. Replace MD5 with SHA-256: `find . -name "*.go" -exec sed -i 's/crypto\/md5/crypto\/sha256/g' {} \;`
 4. Consider post-quantum migration planning (informational)
-
----
-
-<a name="jesseduffield-lazygit"></a>
-
-### Repository: [jesseduffield/lazygit](https://github.com/jesseduffield/lazygit)
-
-**Total Issues:** 2
-**Breakdown:** 0 Critical, 2 High, 0 Medium, 0 Low
-
-#### Code Locations:
-
-| Severity | Rule | File:Line | Description |
-|----------|------|-----------|-------------|
-
-**Recommended Actions:**
-1. Address HIGH/CRITICAL issues immediately
-2. Replace MD5 with SHA-256: `find . -name "*.go" -exec sed -i 's/crypto\/md5/crypto\/sha256/g' {} \;`
 
 ---
 
