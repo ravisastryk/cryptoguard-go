@@ -1,6 +1,6 @@
 # CryptoGuard-Go Detailed Remediation Guide
 
-**Generated:** 2026-07-27
+**Generated:** 2026-08-03
 
 This report provides detailed, actionable remediation steps for each identified vulnerability with code-level examples.
 
