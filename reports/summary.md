@@ -1,13 +1,13 @@
 # CryptoGuard-Go Weekly Vulnerability Scan Report
 
-**Scan Date:** 2026-08-10 09:36:23 UTC
+**Scan Date:** 2026-08-17 09:19:54 UTC
 **Tool Version:** v0.1.0
 
 ## Executive Summary
 
 
 Total repositories scanned: 10
-Repositories with issues: 6
+Repositories with issues: 7
 Total issues found: 9
 
 
@@ -17,12 +17,12 @@ Total issues found: 9
 
 | Repository | Total Issues | Critical | High | Medium | Low | Status |
 |------------|--------------|----------|------|--------|-----|--------|
+| [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [avelino/awesome-go](https://github.com/avelino/awesome-go) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [fatedier/frp](https://github.com/fatedier/frp) | 9 | 0 | 3 | 6 | 0 | ✗ High |
 | [gin/gonic-gin](https://github.com/gin/gonic-gin) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [gohugoio/hugo](https://github.com/gohugoio/hugo) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
-| [junegunn/fzf](https://github.com/junegunn/fzf) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [ollama/ollama](https://github.com/ollama/ollama) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [syncthing/syncthing](https://github.com/syncthing/syncthing) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
