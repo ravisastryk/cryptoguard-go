@@ -1,13 +1,13 @@
 # CryptoGuard-Go Weekly Vulnerability Scan Report
 
-**Scan Date:** 2026-08-17 09:19:54 UTC
+**Scan Date:** 2026-08-24 09:21:53 UTC
 **Tool Version:** v0.1.0
 
 ## Executive Summary
 
 
 Total repositories scanned: 10
-Repositories with issues: 7
+Repositories with issues: 6
 Total issues found: 9
 
 
@@ -25,7 +25,6 @@ Total issues found: 9
 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [ollama/ollama](https://github.com/ollama/ollama) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
-| [syncthing/syncthing](https://github.com/syncthing/syncthing) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 
 ## Issue Breakdown
 
