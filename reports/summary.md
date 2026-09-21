@@ -1,13 +1,13 @@
 # CryptoGuard-Go Weekly Vulnerability Scan Report
 
-**Scan Date:** 2026-09-14 09:18:14 UTC
+**Scan Date:** 2026-09-21 09:18:26 UTC
 **Tool Version:** v0.1.0
 
 ## Executive Summary
 
 
 Total repositories scanned: 10
-Repositories with issues: 6
+Repositories with issues: 7
 Total issues found: 9
 
 
