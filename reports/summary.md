@@ -1,6 +1,6 @@
 # CryptoGuard-Go Weekly Vulnerability Scan Report
 
-**Scan Date:** 2026-10-05 09:24:00 UTC
+**Scan Date:** 2026-10-12 09:27:02 UTC
 **Tool Version:** v0.1.0
 
 ## Executive Summary
@@ -8,7 +8,7 @@
 
 Total repositories scanned: 10
 Repositories with issues: 7
-Total issues found: 9
+Total issues found: 0
 
 
 ## Detailed Findings
@@ -19,7 +19,7 @@ Total issues found: 9
 |------------|--------------|----------|------|--------|-----|--------|
 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [avelino/awesome-go](https://github.com/avelino/awesome-go) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
-| [fatedier/frp](https://github.com/fatedier/frp) | 9 | 0 | 3 | 6 | 0 | ✗ High |
+| [fatedier/frp](https://github.com/fatedier/frp) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [gin/gonic-gin](https://github.com/gin/gonic-gin) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [gohugoio/hugo](https://github.com/gohugoio/hugo) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
@@ -32,11 +32,6 @@ Total issues found: 9
 
 | Rule ID | Description | Severity | Count | CWE |
 |---------|-------------|----------|-------|-----|
-| CRYPTO001 | MD5 usage for security purposes | HIGH | - | CWE-328 |
-| CRYPTO002 | SHA1 usage for security purposes | HIGH | - | CWE-328 |
-| CRYPTO010 | Hardcoded cryptographic key | CRITICAL | - | CWE-321 |
-| CRYPTO020 | Static IV/nonce detected | CRITICAL | - | CWE-329 |
-| CRYPTO040 | Quantum-vulnerable algorithm | MEDIUM | - | CWE-327 |
 
 ## Recommendations
 

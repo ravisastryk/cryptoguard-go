@@ -1,6 +1,6 @@
 # CryptoGuard-Go Detailed Remediation Guide
 
-**Generated:** 2026-10-05
+**Generated:** 2026-10-12
 
 This report provides detailed, actionable remediation steps for each identified vulnerability with code-level examples.
 
@@ -20,25 +20,6 @@ This report provides detailed, actionable remediation steps for each identified 
 
 
 ## Repository-Specific Findings
-
-<a name="fatedier-frp"></a>
-
-### Repository: [fatedier/frp](https://github.com/fatedier/frp)
-
-**Total Issues:** 9
-**Breakdown:** 0 Critical, 3 High, 6 Medium, 0 Low
-
-#### Code Locations:
-
-| Severity | Rule | File:Line | Description |
-|----------|------|-----------|-------------|
-
-**Recommended Actions:**
-1. Address HIGH/CRITICAL issues immediately
-2. Replace MD5 with SHA-256: `find . -name "*.go" -exec sed -i 's/crypto\/md5/crypto\/sha256/g' {} \;`
-4. Consider post-quantum migration planning (informational)
-
----
 
 
 ## Code Fix Examples
