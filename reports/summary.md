@@ -1,13 +1,13 @@
 # CryptoGuard-Go Weekly Vulnerability Scan Report
 
-**Scan Date:** 2026-10-12 09:27:02 UTC
+**Scan Date:** 2026-10-19 09:20:31 UTC
 **Tool Version:** v0.1.0
 
 ## Executive Summary
 
 
 Total repositories scanned: 10
-Repositories with issues: 7
+Repositories with issues: 8
 Total issues found: 0
 
 
@@ -20,11 +20,11 @@ Total issues found: 0
 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [avelino/awesome-go](https://github.com/avelino/awesome-go) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [fatedier/frp](https://github.com/fatedier/frp) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
-| [gin/gonic-gin](https://github.com/gin/gonic-gin) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [gohugoio/hugo](https://github.com/gohugoio/hugo) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 | [ollama/ollama](https://github.com/ollama/ollama) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
+| [syncthing/syncthing](https://github.com/syncthing/syncthing) | 0 | 0 | 0 | 0 | 0 | ✓ Clean |
 
 ## Issue Breakdown
 
